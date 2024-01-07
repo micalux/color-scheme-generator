@@ -10,6 +10,7 @@ html, body {
     margin: 0 auto;
     width: 80%;
     background-color: #1F2937;
+    max-width: 900px;
 }
 
 .select-bar {
@@ -18,10 +19,11 @@ html, body {
 
 form {
     margin: 0;
-    padding: 20px;
+    padding: 1.25em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.9em;
 }
 
 input, select, button {
@@ -58,7 +60,12 @@ button {
     cursor: pointer;
 }
 
+.grid-container p:active {
+    color: white;
+}
+
 .grid-container {
     display: grid;
-    grid-template: 500px auto / repeat(5, auto);
+    /* grid-template: 31em auto / repeat(5, auto); */
+    grid-template: 50vh auto / repeat(5, auto);
 }
